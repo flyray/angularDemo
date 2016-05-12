@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<body>
+    <div ng-app="" ng-init="myswitch = true">
+        <p>
+            <button ng-disabled="myswitch">click me</button>
+        </p>
+        <p>
+            <input type="checkbox" ng-model="myswitch">按钮
+        </p>
+        <p>
+            {{myswitch}}
+        </p>
+    </div>
+
+</body>
+</html>

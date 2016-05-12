@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="userCtrl">
+
+    <div class="container">
+        <h3>user</h3>
+        <table class="table table-striped">
+            <thread>
+                <tr>
+                    <th>编辑</th>
+                    <th>名</th>
+                    <th>姓</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td>
+                        <button class="btn" ng-click="editUser(user.id)">
+                            <span class="glyphicon glyphicon-pencil">编辑</span>
+                        </button>
+                    </td>
+                    <td>{{user.fName}}</td>
+                    <td>{{user.lName}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

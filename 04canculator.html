@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<body>
+    <div ng-app="" ng-init="quantity=1; price=3">
+        数量: <input type="text" ng-model="quantity">
+        单价: <input type="text" ng-model="price">
+        <br>
+        总价:{{quantity * price}}
+    </div>
+
+</body>
+</html>
